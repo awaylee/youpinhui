@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/goods.js"></script>
+	<link rel="stylesheet" style="text/css" href="../css/base.css">
+	<link rel="stylesheet" style="text/css" href="../css/goods.css">
+</head>
+<body>
+	<!--top-->
+	<div class="top">
+		<div class="topcon"><img src="../images/listtop.jpg" alt=""></div>
+	</div>
+
+	<!--公告-->
+	<div class="notice">
+		<div class="noticecon">
+			<div class="notice_list">
+				<span>公告：</span>
+				<ul>
+					<li class="show_notice" ><a href="#">【公告】防诈骗提醒</a></li>
+					<li><a href="#">【紧急通知】关于短信发送异常的公告</a></li>
+					<li><a href="#">优品惠(优购物)5周年庆，盛大聚“惠”</a></li>
+					<li><a href="#">【注意】自主语音订购说明</a></li>
+					<li class="show_notice" ><a href="#">【公告】防诈骗提醒</a></li>
+				</ul>		
+			</div>	
+			<div class="topnav">
+				<ul>
+					<li><span><a href="register.html">注册</a></span>|</li>
+					<li><span><a href="load.html">登录</a></span>|</li>
+					<li><span><a href="order.html">我的订单</a></span>|</li>
+					<li><span><a href="##">物流查询</a></span>|</li>
+					<li><span><a href="##">我的关注</a></span>|</li>
+					<li><span><a href="##">资讯</a></span>|</li>
+					<li><span><a href="##">品牌馆</a></span>|</li>
+					<li class="nav_ewm">
+						<span><a href="##"><img src="../images/phone.png" />手机优品惠</a></span>
+						<div class="phone_ewm">
+							<img src="../images/foot_ewm.jpg" alt="">
+							<p>扫一扫哦~</p>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+
+	<!--logo-->
+	<div class="logo">
+		<div class="logocon">
+			<div class="logo_pic">
+				<div><a href="#"><img src="../images/logo.png" /></a></div>
+				<p><a href="#"><img src="../images/logom.jpg" /></a></p>
+			</div>
+			<div class="search">
+				<input class="text" type="text" placeholder="请输入商品名称或货号">
+				<input class="button" type="button" value="搜索">
+			</div>
+			<div class="shopcar">
+				<img src="../images/gwc.png" />
+				<a href="../html/shopcar.html">我的购物车</a>
+				<span>0</span>
+				<div class="cart_con">
+					<p>购物车还没有商品，快去挑选吧~</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--nav-->
+	<div class="nav">
+		<div class="navcon">
+			<ul class="navcon_list">
+				<li><a class="active" href="javascript:;">首页</a></li>
+				<li><a class="tv" href="javascript:;">视频</a></li>
+				<li><a href="javascript:;">食品</a></li>
+				<li><a href="javascript:;">家居</a></li>
+				<li><a href="javascript:;">美妆</a></li>
+				<li><a href="javascript:;">服饰</a></li>
+				<li><a href="javascript:;">海外购</a></li>
+			</ul>
+			<div id="sorts">
+				<p class="sort"></p>
+				<div class="all_sort">
+					<div>
+						<h3 class="kind1"><a href="#">品质厨房</a></h3>
+						<ul>
+							<li><a href="#">电视热销</a></li>
+							<li><a href="#">品质厨具</a></li>
+							<li><a href="#">厨房电器</a></li>
+							<li><a href="#">厨房用具</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="kind2"><a href="#">美食·民生</a></h3>
+						<ul>
+							<li><a href="#">电视热销</a></li>
+							<li><a href="#">进口食品</a></li>
+							<li><a href="#">营养保健</a></li>
+							<li><a href="#">特产零食</a></li>
+							<li><a href="#">粮油干货</a></li>
+							<li><a href="#">酒水茶饮</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="kind3"><a href="#">健康生活</a></h3>
+						<ul>
+							<li><a href="#">电视热销</a></li>
+							<li><a href="#">优质睡眠</a></li>
+							<li><a href="#">家具装饰</a></li>
+							<li><a href="#">清洁收纳</a></li>
+							<li><a href="#">家庭健身</a></li>
+							<li><a href="#">生活电器</a></li>
+							<li><a href="#">日用配件</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="kind4"><a href="#">魅力穿戴</a></h3>
+						<ul>
+							<li><a href="#">电视热销</a></li>
+							<li><a href="#">服装内衣</a></li>
+							<li><a href="#">鞋包配饰</a></li>
+							<li><a href="#">旅游户外</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="kind5"><a href="#">珠宝收藏</a></h3>
+						<ul>
+							<li><a href="#">电视热销</a></li>
+							<li><a href="#">珍珠彩宝</a></li>
+							<li><a href="#">翡翠玉石</a></li>
+							<li><a href="#">天然木饰</a></li>
+							<li><a href="#">文化收藏</a></li>
+						</ul>
+					</div>
+					<div class="last">
+						<h3 class="kind6"><a href="#">美肤靓装</a></h3>
+						<ul>
+							<li><a href="#">电视热销</a></li>
+							<li><a href="#">品牌护肤</a></li>
+							<li><a href="#">洗护护理</a></li>
+							<li><a href="#">彩妆香水</a></li>
+							<li><a href="#">美容仪器</a></li>
+						</ul>
+					</div>
+
+				</div> 
+			</div>		
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$(".sort,.all_sort").hover(function(){
+				$(".all_sort").show();
+				$(".sort").css({backgroundPosition:"0 -133px"});
+			},function(){
+				$(".all_sort").hide();
+				$(".sort").css({backgroundPosition:"0 -65px"});
+			});
+		});	
+	</script>
+
+<!--content 内容-->
+<div class="content">
+	<div class="curr_location">
+		当前位置：
+		<a href="../index.html">首页</a>>
+		<a href="##">厨房</a>>
+		<a href="##">电视热销</a>>
+		<a href="##">近期新品</a>>
+		<a href="##">瑞辰手工酸奶器 无需插电发酵 自制酸奶安全美味</a>		
+	</div>
+
+	<!--商品详情 放大镜效果-->
+	<div class="goods">
+		<div class="goods_left">
+			<div class="middle">
+				<img class="picture" src="../images/f1.jpg" alt="">
+				<div class="pop"></div>
+				<div class="newbq"></div>
+				<div class="big">
+					<img src="../images/f1.jpg" alt="">
+				</div>
+			</div>	
+			<div class="small">
+				<ul>
+					<li class="curr"><img src="../images/f1.jpg" alt=""></li>
+					<li><img src="../images/f2.jpg" alt=""></li>
+					<li><img src="../images/f3.jpg" alt=""></li>
+					<li><img src="../images/f4.jpg" alt=""></li>
+					<li><img src="../images/f5.jpg" alt=""></li>
+				</ul>
+				<div class="back"></div>
+				<div class="go"></div>
+			</div>
+			<div class="goods_share">
+				<p>商品货号：<span class="id_num">500488_001</span></p>
+				<div>
+					<i><img src="../images/share.png"></i><a href="##">分享</a>
+					<i><img src="../images/collect.png"></i><a href="##">已关注</a>
+				</div>
+			</div>
+		</div>
+		<!--goods_right-->
+		<div class="goods_right">
+			<form action="#" class="g_form">
+				<p class="tefal"><a href="##">特福Tefal</a></p>
+				<div class="h_title">瑞辰手工酸奶器 无需插电发酵 自制酸奶安全美味 </div>
+				<p class="description">不用插电也可以自制酸奶，每天都很新鲜健康。</p>
+				<div class="price_box">
+					<div>
+						<span>价格</span><i>&yen;</i><b class="h_price">199</b>
+					</div>
+					<div>
+						<span class="label">优惠</span>
+						<div class="favorable">
+							<p><b>立减</b><span>TV商品下单立减10元</span></p>
+							<p><b>包邮</b><span>订单金额满168元包邮</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="choice_buy">
+					<p class="p_buy">
+						<span class="p_pright">送至</span>
+						<span class="text"><i style="font-style:normal;">请选择收货地址</i><img src="../images/jc.jpg" alt=""></span><strong>有货</strong>
+					</p>
+					<p class="p_buy num">
+						<span class="p_pright">数量</span>
+						<span class="g_num">
+							<a href="##" id="jian">-</a><input id="g_num" type="text" value="1"><a href="##" id="jia">+</a>
+						</span>
+					</p>
+					<div class="cities">
+						<span class="c_close">&times;</span>
+						<ul class="mt">
+							<li class="mt1 curr">请选择</li>
+							<li class="mt2">请选择</li>
+							<li class="mt3">请选择</li>
+						</ul>
+						<div class="table_con">
+							<ul class="city_ul">
+								<li id="province" class="active">
+									<span>北京</span><span>安徽</span><span>福建</span><span>甘肃</span><span>广东</span>
+									<span>广西</span><span>贵州</span><span>海南</span><span>河北</span><span>河南</span><span>湖北</span><span>湖南</span><span>吉林</span><span>江苏</span><span>江西</span><span>辽宁</span><span>宁夏</span><span>青海</span><span>山东</span><span>山西</span><span>陕西</span><span>上海</span><span>四川</span><span>天津</span><span>西藏</span><span>新疆</span><span>云南</span><span>浙江</span><span>重庆</span><span>香港</span><span>澳门</span><span>台湾</span><span>黑龙江</span><span>内蒙古</span>
+								</li>
+								<li id="city">
+									<p class="cit_1">
+										<span>北京</span>
+									</p>
+									<p class="cit2">
+										<span>安庆</span><span>蚌埠</span><span>池州</span><span>滁州</span><span>阜阳</span><span>淮北</span><span>淮南</span><span>黄山</span><span>六安</span><span>宿州</span><span>铜陵</span><span>芜湖</span><span>宣城</span><span>亳州</span><span>合肥</span><span>马鞍山</span>
+									</p>
+								</li>
+								<li id="area">
+									<p class="cit1">
+										<span>东城区</span><span>西城区</span><span>海淀区</span><span>朝阳区</span><span>崇文区</span><span>宣武区</span><span>丰台区</span><span>房山区</span><span>通州区</span><span>顺义区</span><span>昌平区</span><span>怀柔区</span><span>平谷区</span><span>大兴区</span><span>密云县</span><span>延庆县</span><span>石景山区</span><span>门头沟区</span>
+									</p>
+									<p class="cit2">
+										<p>
+											<span>迎江区</span><span>大观区</span><span>宜秀区</span><span>桐城市</span><span>怀宁县</span><span>枞阳县</span><span>潜山县</span><span>太湖县</span><span>宿松县</span><span>望江县</span><span>岳西县</span>
+										</p>
+										<p>
+											<span>蚌山区</span><span>禹会区</span><span>淮上区</span><span>怀远县</span><span>五河县</span><span>固镇县</span><span>龙子湖区</span>
+										</p>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="add_cart"><img src="../images/gwc1.png" alt="">加入购物车</div>
+			</form>
+		</div>	
+	</div>
+
+	<div class="prove"><img src="../images/declaration2.jpg" alt=""></div>
+
+	<!--groups 商品信息-->
+	<div class="groups">
+		<div class="related">
+			<div class="tab_head">
+				<ul>
+					<li class="active">商品详情</li>
+					<li>评论<span class="a_pj">（1570）</span></li>
+					<li>服务说明</li>
+				</ul>
+			</div>
+
+			<div class="tab_detail">
+
+				<!--商品详情-->
+				<div class="detail_title"></div>
+				<div class="detail_top">
+					<ul class="detail_table">
+						<li class="row">
+							<div class="tit"><b>商品名称</b></div>
+							<div class="det"><p>瑞辰手工酸奶器 无需插电发酵 自制酸奶安全美味</p></div>
+						</li>
+						<li class="row">
+							<div class="tit"><b>品牌</b></div>
+							<div class="det"><p>瑞辰</p></div>
+						</li>
+						<li class="row">
+							<div class="tit"><b>上架时间</b></div>
+							<div class="det"><p>2015-04-16</p></div>
+						</li>
+						<li class="row">
+							<div class="tit"><b>规格参数</b></div>
+							<div class="det">
+								<p>品牌：瑞辰</p><br/>
+								<p>产地：韩国</p><br/>
+								<p>尺寸：16cm*15.8cm*27cm</p><br/>
+								<p>主品：酸奶机主机</p><br/>
+								<p>1L酸奶杯</p><br/>
+								<p>赠品：</p><br/>
+								<p>赠品：</p><br/>
+								<p>270ML酸奶量杯*6</p><br/>
+							</div>
+						</li>
+						<li class="row">
+							<div class="tit"><b>包装清单</b></div>
+							<div class="det">
+								<p>主品：酸奶机主机*1，说明书*1,1L酸奶杯*1  赠品：1L酸奶杯*1,270ML酸奶量杯*6</p>
+							</div>
+						</li>
+					</ul>
+					<div class="tetail_pic">
+						<img src="../images/f1.jpg" alt="">
+						<img src="../images/f2.jpg" alt="">
+						<img src="../images/f3.jpg" alt="">
+						<img src="../images/f4.jpg" alt="">
+						<img src="../images/f5.jpg" alt="">
+						<img src="../images/f6.jpg" alt="">
+						<img src="../images/f7.jpg" alt="">
+					</div>
+				</div>
+				<!--用户评价-->
+				<div class="detail_title comment_title"></div>
+				<div class="comment_box detail_top">
+					<div class="select_estimate">
+						<p>
+							<input type="radio" name="pl" checked="checked" id="ra"><label for="ra"> 全部评论<span>(1570)</span></label>
+							<input type="radio" name="pl" id="rg"><label for="rg"> 好评<span>(1528)</span></label>
+							<input type="radio" name="pl"  id="rm"><label for="rm"> 中评<span>(31)</span></label>
+							<input type="radio" name="pl" id="rl"><label for="rl"> 差评<span>(11)</span></label>
+						</p>
+						<p class="c_choice">
+							<input type="checkbox" id="c_choice"> <label for="c_choice"> 有晒图</label>
+						</p>
+					</div>
+					<div>
+						<ul class="comment_box_list">
+							<li>
+								<div class="comment_con">
+									<p>送货快捷！服务好，已经是第二次购买瑞辰手工酸奶器啦！做出的酸奶味道相当不错！关键是没有任何添加剂，大家都非常喜欢喝，并且可以添加黄桃，草莓 </p><br/>
+									<p class="comment_time">2016-08-12 13:48:05</p>
+								</div>
+								<div class="comment_star">
+									<span>139****3130</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>方便，好用。会一直支持  </p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span>135****0669</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>自己做了很成功，还孩子一起做很有成就感！ </p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span>156****7888</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>买回来一夏天在用，做的很好吃！！！！</p><br/>
+									<p class="comment_time">2016-03-09 22:39:42</p>
+								</div>
+								<div class="comment_star">
+									<span>135****3648</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>好好好好好好好好好好 </p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span> 186****5229</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>很好的，做出来的酸奶很健康！孩子和我们都好喜欢！</p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span>156****7888</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>物超所值，东西很精致，材料很好。  </p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span>156****7888</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>自己做了很成功，还孩子一起做很有成就感！ </p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span>156****7888</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>自己做的小朋友吃了才放心 </p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span>159****9101</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="comment_con">
+									<p>自己做了很成功，还孩子一起做很有成就感！ </p><br/>
+									<p class="comment_time">2016-04-06 16:50:57</p>
+								</div>
+								<div class="comment_star">
+									<span>158****6430</span>
+									<img src="../images/star.jpg" alt="">
+								</div>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<!-- 评价的页数 redline -->
+				<div class="redline">
+					<p>
+						<a href="##" class="pag"><上一页</a>
+						<a href="##"  class="on">1</a>
+						<a href="##">2</a>
+						<a href="##">3</a>
+						<a href="##">4</a>
+						<a href="##">5</a>
+						<a href="##">6</a>
+						<a href="##">7</a>
+						<a href="##">...</a>
+						<a href="##">8</a>
+						<a href="##" class="pag">下一页></a>
+					</p>
+				</div>
+
+				<!--服务说明-->
+				<div class="detail_title instruction_title"></div>
+				<div class="instruction_pic detail_top">
+					<img src="../images/fei-service-pay.jpg" alt="">
+					<img src="../images/fei-service-tui.jpg" alt=""><br/><br/>
+				</div>
+			</div>	
+		</div>
+	</div><!--groups 商品信息-->
+
+	<!--其他同类商品-->
+	<div class="similar">
+		<div class="similar_head">
+			<i></i>看看其他同类商品
+		</div>
+		<div class="similar_list">
+			<dl>
+				<dt><a href="##"><img src="../images/ss1.jpg" alt=""></a></dt>
+				<dd>
+					<p><a href="##">德国进口埃尔曼酸奶4*100g*6托组合装</a></p>
+					<p class="s_price"><span>&yen;</span>195</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt><a href="##"><img src="../images/1 (2).jpg" alt=""></a></dt>
+				<dd>
+					<p><a href="##">德国进口埃尔曼酸奶4*100g*6托组合装</a></p>
+					<p class="s_price"><span>&yen;</span>195</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt><a href="##"><img src="../images/ss2.jpg" alt=""></a></dt>
+				<dd>
+					<p><a href="##">德国进口埃尔曼酸奶4*100g*6托组合装</a></p>
+					<p class="s_price"><span>&yen;</span>195</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt><a href="##"><img src="../images/1 (4).jpg" alt=""></a></dt>
+				<dd>
+					<p><a href="##">德国进口埃尔曼酸奶4*100g*6托组合装</a></p>
+					<p class="s_price"><span>&yen;</span>195</p>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div><!--content-->
+
+<!--footer-->
+<div class="footercon">
+	<div class="footer">
+		<div class="temai">
+			<a href="javascript:;"><img src="../images/footer_ad.jpg" /></a>
+		</div>
+		<div class="submenu">
+			<div class="sublist">
+				<h2>新手上路</h2>
+				<a href="javascript:;">新用户注册</a>
+				<a href="javascript:;">忘记密码</a>
+				<a href="javascript:;">购物流程</a>
+			</div>
+			<div class="sublist">
+				<h2>支付配送</h2>
+				<a href="javascript:;">货到付款</a>
+				<a href="javascript:;">支付宝</a>
+				<a href="javascript:;">配送方式</a>
+			</div>
+			<div class="sublist">
+				<h2>会员服务</h2>
+				<a href="javascript:;">服务承诺</a>
+				<a href="javascript:;">会员制度</a>
+				<a href="javascript:;">积分介绍</a>
+				<a href="javascript:;">退换货原则</a>
+			</div>
+			<div class="sublist no_border">
+				<h2>关于优品惠</h2>
+				<a href="javascript:;">企业介绍</a>
+				<a href="javascript:;">联系我们</a>
+				<a href="javascript:;">招商专区</a>
+			</div>
+			<div class="foot_ewm">
+				<img src="../images/foot_ewm.jpg" />
+				<p>手机优品惠</br><span>(优购物)</span></p>
+			</div> 
+			<div class="foot_dh">
+				<img src="../images/foot_dh.jpg" />
+			</div>			
+		</div>
+	</div>
+
+	<!--copyright-->
+	<div class="copyright">
+		<p>
+			<a href="#">首页</a>|<a href="#">关于优品惠</a>|<a href="#">优购网</a>|<a href="#">惠买集团</a>|<a href="#">联系我们</a>|<a href="#">招贤纳士</a>|<a href="#">招商专区</a>|<a href="#">供应商入口</a>|<a href="#">友情链接</a>|<a href="#">网站地图</a>|<a href="#">资讯中心</a>|<a href="#">评论</a>|<a href="#">图片</a>
+		</p>
+		<div class="links">
+			优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.
+		</div>
+		<p class="copy">Copyright&copyright;2007-2016 公司名称:北京优品惠网络科技有限公司 统一社会信用代码:91110302339739621C  ICP备案号:京ICP备15039150号-1 食品经营许可证编号:JY11131010332635</p>
+		<p class="copy">公司地址:北京市经济技术开发区同济南路19号 服务热线：400-707-0707</p>
+		<p class="copy"><img src="../images/bei.png" alt="">京公网安备 11030102000055号</p>
+	</div>
+</div>
+
+<!--右边侧栏-->
+<div class="outer_line"></div>
+<div class="right_scroll">
+	<ul class="bar_top">
+		<li class="bar1">
+			<div class="bar1_hide">
+				<span class="bar1_close"></span>
+				<div class="bar1_info">
+					<a class="bar1_pic" href="##"><img src="../images/user.jpg" alt=""></a>
+					<p class="bar1_tip">您好！请 <a href="load.html"> 登录</a>|<a href="register.html">注册</a></p>
+					<p class="bar1_tickt">
+						<a>我的订单</a>
+						<a>优惠券</a>
+					</p>
+				</div>
+			</div>
+		</li>
+		<li class="bar2">
+			<p><a href="shopcar.html">购物车</a></p>
+		</li>
+		<li class="bar3">
+			<p><a href="##">我的关注</a></p>
+		</li>
+		<li class="bar4">
+			<p><a href="##">在线客服</a></p>
+		</li>
+	</ul>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".bar1_close").click(function(){
+				$(".bar1_hide").hide();
+			});
+			$(".bar1").hover(function(){
+				$(".bar1_hide").show();
+			},function(){
+				$(".bar1_hide").hide();
+			});
+		});
+	</script>
+
+	<ul class="bar_fot">
+		<li class="bar5">
+			<p><a href="#"><img src="../images/code.jpg" alt=""></a></p>
+		</li>
+		<li class="bar6">
+			<p><a href="##">调查问卷</a></p>
+		</li>
+		<li class="bar7"><a href="#"></a>
+			<p><a href="#">回到顶部</a></p>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		$(function(){
+			$(".bar_fot li").hover(function(){
+				$(this).children("p").show().end()
+					   .siblings().children("p").hide();
+			}, function(){
+				$(this).children("p").hide();
+			});;
+		});
+	</script>
+</div>
+	
+</body>
+</html>

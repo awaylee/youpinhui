@@ -1,0 +1,108 @@
+body{
+	background: #fff;
+}
+.notice{
+	background: #F2F2F2;
+}
+
+/* logo */
+.logo{
+	width:968px;height:112px;margin:0 auto;
+}
+.reg_logo{
+	width:353px;height:57px;float: left;padding-top: 31px;
+}
+.reg_logo a{
+	display: block; width:185px;height:57px;float: left;background: url(../images/welland.gif);
+}
+.reg_logo span{
+	display: block;	width:168px;height:57px;float: right;background: url(../images/welland.gif) no-repeat 0 -59px;
+}
+.logo p{
+	width:350px;padding-top: 70px;float: right;text-align: right;
+}
+.logo p a{
+	color:#0089CF;
+}
+.logo p b{
+	font-size: 14px;
+	color:#eb0007;
+}
+
+/*  load 登录框  */
+.load{
+	width:964px;height:376px;margin:0 auto;border:2px solid #FF8400;
+}
+
+/*  left  */
+.form_box{
+	width:664px;height:376px;float:left;background: #fff;
+}
+.form_box form{
+	padding-left:133px;padding-top:62px;
+}
+form input{
+	outline: none;
+}
+.item{
+	width:352px;height:65px;
+}
+.item span{
+	line-height: 27px;color: #666;
+}
+.frame{
+	height:35px;border:1px solid #a2a2a2;position: relative;
+}
+.frame input{
+	width:320px;height:25px;border:0; padding:4px 15px;float: left;
+}
+.p_name{
+	width:16px;height:16px;position:absolute;top:8px;right:8px;background:url(../images/welland.gif) no-repeat 0 -229px;
+}
+.tips{
+	width:320px;height:22px;line-height:22px;position: absolute;left: -1px;top:36px;padding:0 15px;border:1px solid #FFADB0;color:#666;background:#FFF3F3;display: none;
+}
+.checkbox{
+	height:40px;
+}
+.checkbox a{
+	float: right;color:#0089CF;
+}
+.load_button input{
+	width: 351px;height:37px;border:0;background:#f11c44;color:#fff;text-align:center;cursor: pointer;
+}
+
+/*  right  */
+.load_right{
+	width:300px;height:376px;float:left;background:#fff6ec;
+}
+.right_con{
+	padding-top:62px;padding-left:82px;
+}
+.right_con .vip{
+	height:62px;padding-bottom: 42px;
+}
+.vip p{
+	height:20px;padding-bottom: 10px;font-size: 14px;line-height: 20px;color: #555;
+}
+.vip a{
+	display:block;width:142px;height:32px;text-align: center;line-height:32px;font-size:14px;color: #ff6000;background: url(../images/welland.gif) no-repeat 0 -155px;
+}
+
+/*  左侧滚动栏  */
+.scroll_left{
+	width:124px;height:235px;position:absolute;left:0;top:150px;background: red;
+}
+.scroll_left img{
+	display: block;
+}
+
+/*  copyright  */
+.links{
+	text-align: center;
+}
+.copyright img{
+	display: inline-block;width: 20px;height:20px;margin-top:1px;
+}
+
+

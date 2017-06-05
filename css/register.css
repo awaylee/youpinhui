@@ -1,0 +1,263 @@
+body{
+	background: #fff;
+}
+.notice{
+	background: #F2F2F2;
+}
+
+/* logo */
+.logo{
+	width:968px;
+	height:112px;
+	margin:0 auto;
+}
+.reg_logo{
+	width:353px;
+	height:57px;
+	float: left;
+	padding-top: 31px;
+}
+.reg_logo a{
+	display: block; 
+	width:185px;
+	height:57px;
+	float: left;
+	background: url(../images/welland.gif);
+}
+.reg_logo span{
+	display: block;
+	width:168px;
+	height:57px;
+	float: right;
+	background: url(../images/welreg_01.gif)
+}
+.logo p{
+	width:120px;
+	padding-top: 60px;
+	float: right;
+}
+.logo p a{
+	color:#0089CF;
+}
+
+/*  regnav  */
+.regnav{
+	width:968px;
+	height:42px;
+	margin:0 auto;
+}
+.regnav li{
+	width:225px;
+	height:42px;
+	margin-right: 2px;
+	line-height: 42px;
+	font-size: 14px;
+	text-align: center;
+	color: #797979;
+	background:url(../images/welreg_01.gif) no-repeat 0 -102px;
+	float:left;
+	display:inline;
+}
+.regnav li a{
+	height:16px;
+	line-height: 43px;
+	background:url(../images/welreg_01.gif) no-repeat 0 -212px;
+	padding-left: 20px;
+	color: #797979;
+}
+.regnav .icon2{
+	background:url(../images/welreg_01.gif) no-repeat 0 -304px;
+}
+.regnav .on{
+	background:url(../images/welreg_01.gif) no-repeat 0 -58px;
+}
+.regnav .on .icon1{
+	color: #fff;
+	background:url(../images/welreg_01.gif) no-repeat 0 -233px;
+}
+.regnav .on .icon2{
+	color: #fff;
+	background:url(../images/welreg_01.gif) no-repeat 0 -286px;
+}
+
+/*  login 注册  */
+.login{
+	width:964px;
+	height:446px;
+	margin:0 auto;
+	border:2px solid #FF8400;
+	display: none;
+}
+.login1{
+	display: block;
+}
+.item{
+	height:37px;
+	padding-bottom: 15px;
+}
+.login form{
+	padding-top: 45px;
+	font-size: 14px;
+	color: #666;
+}
+form input{
+	outline: none;
+}
+.item span{
+	display: block;
+	float: left;
+	width:187px;
+	height:37px;
+	line-height:37px;
+	padding-left:15px;
+	text-align: right;
+}
+.frame,.approve_ifo{
+	width: 351px;
+	height:35px;
+	line-height: 35px;
+	border:1px solid #a2a2a2;
+	float: left;
+	position: relative;
+}
+.approve_ifo,.dx_code{
+	border:none;
+}
+.dxm{
+	width: 124px;
+	height: 35px;
+	float: left;
+	border: 1px solid #a2a2a2;
+}
+.frame input{
+	width:320px;
+	height:25px;
+	border:0; 
+	padding:4px 15px;
+	float: left;
+}
+.p_tel{
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:8px;
+	right:8px;
+	background:url(../images/welland.gif) no-repeat 0 -229px;
+}
+.p_tel2{
+	background-position: 0 -275px;
+	display: none;
+}
+.tips{
+	width:281px;
+	height:35px;
+	position: absolute;
+	left: 353px;
+	top:-1px;
+	border:1px solid #FFADB0;
+	line-height: 35px;
+	color: #EB0007;
+	text-indent: 15px;
+	background:#FFF3F3;
+	display: none;
+}
+.tips1{
+	color: #555;
+	background:#f6f6f6;
+	border-color: #e9e9e9;
+}
+.code_ifo{
+	width:124px;
+}
+.code_ifo input{
+	width:94px;
+	height:25px;
+	border:0;
+	padding:4px 15px;
+	float: left;
+}
+.random_code{
+	width: 90px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:22px;
+	margin-top:4px;
+	margin-left:5px;
+	background: #ccc;
+	float: left;
+}
+.code p{
+	width:90px;
+	line-height:35px;
+	float: left;
+	font-size: 12px;
+	padding-left:5px;
+}
+.code p a{
+	color:#0089CF;
+}
+.code p a:hover{
+	text-decoration: underline;
+}
+.p_psw{
+	width:16px;
+	height:19px;
+	position:absolute;
+	top:7px;
+	right:8px;
+	background:url(../images/welland.gif) no-repeat 0 -251px;
+}
+.psw_ifo .tips1{
+	font-size: 10px;
+}
+.btn{
+	outline:none;
+	margin-left:10px;
+	margin-top:5px;
+	width:116px;
+	height:25px;
+}
+label{
+	font-size: 12px;
+	color: #666;
+}
+label a,label a:hover{
+	color: #0089CF;
+}
+.refer_ifo{
+	width:126px;
+	height:33px;
+	float:left;
+	background:url(../images/welreg_01.gif) no-repeat 0 -175px;
+	cursor:pointer;
+	border:0;
+	outline: none;
+}
+
+/*  左侧滚动栏  */
+.scroll_left{
+	width:124px;
+	height:235px;
+	position:absolute;
+	left:0;top:150px;
+}
+.scroll_left img{
+	display: block;
+}
+
+/*  copyright  */
+.links{
+	text-align: center;
+}
+.copyright img{
+	display: inline-block;
+	width: 20px;
+	height:20px;
+	margin-top:1px;
+}
+
+
+
+
+

@@ -1,0 +1,12 @@
+{
+	"status":200,
+	"message":"sucess",
+	"data" : {
+		"username" : "xiaoming",
+		"nickname" : "小明",
+		"sex" : "男",
+		"phone" : "13100998877",
+		"scroe" : 100,
+		"level" : "普通会员"
+	}
+}

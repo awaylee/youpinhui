@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/order.js"></script>
+	<link rel="stylesheet" style="text/css" href="../css/base.css">
+	<link rel="stylesheet" style="text/css" href="../css/order.css">
+</head>
+<body>
+	<!--top-->
+	<div class="top">
+		<div class="topcon"><img src="../images/listtop.jpg" alt=""></div>
+	</div>
+
+	<!--公告-->
+	<div class="notice">
+		<div class="noticecon">
+			<div class="topnav">
+				<ul>
+					<li><span><a href="##">欢迎您，18380461894</a></span>|</li>
+					<li><span><a href="load.html">退出</a></span>|</li>
+					<li><span><a href="order.html">我的账户</a></span>|</li>
+					<li><span><a href="##">我的订单</a></span>|</li>
+					<li><span><a href="##">物流查询</a></span>|</li>
+					<li><span><a href="##">资讯</a></span>|</li>
+					<li><span><a href="##">品牌馆</a></span>|</li>
+					<li class="nav_ewm">
+						<span><a href="##"><img src="../images/phone.png" />手机优品惠</a></span>
+						<div class="phone_ewm">
+							<img src="../images/foot_ewm.jpg" alt="">
+							<p>扫一扫哦~</p>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</div>	
+
+	<!--logo-->
+	<div class="logo">
+		<div class="logocon">
+			<div class="logo_pic">
+				<div class="ugo_pic"><a href="#"><img src="../images/logocar.png" /></a></div>
+				<div class="steps">
+					<p></p>
+					<div class="carinfo">
+						<span class="steping">我的购物车</span>
+						<span class="steping">确认订单信息</span>
+						<span>提交订单</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!--确认订单信息-->
+	<div class="affirm">
+		<p class="affirm_title">确认订单信息</p>
+		<!--收货地址-->
+		<div class="affirm_table">
+			<!--收货地址表单-->
+			<div class="a_title">选择收货地址</div>
+			<form action="#">
+				<dl>
+					<dt><i>*</i>收 货 人：</dt>
+					<dd class="consignee">
+						<input type="text">
+						<p class="d_name">请填写正确的收货人</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>收货地址：</dt>
+					<dd>
+						<select name="province" id="provice" >
+							<option selected="selected" class="chose area-pro">选择省/直辖市</option>
+						</select>
+						<select name="city" id="city" >
+							<option selected="selected" class="chose area-city">选择市</option>
+						</select>
+						<select name="addr" id="addr">
+							<option selected="selected" class="chose area-area">选择县/区</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>详细地址：</dt>
+					<dd class="dd address">
+						<input type="text" placeholder="请填写详细地址">
+						<p class="d_address">请填写详细地址</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>手机号码：</dt>
+					<dd class="dd tellphone">
+						<input type="text">
+						<p class="d_tellphone">请填正确的手机号码</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd class="save"><input type="button" value="保存收货地址"></dd>
+				</dl>
+			</form>
+		</div>
+		<!--支付方式-->
+		<div class="pay_table">
+			<div class="pay_title">选择支付方式</div>
+			<div class="pay_way pay_way_in">
+				<input type="radio" id="p_w_i" name="pay-way">
+				<h4>在线付款</h4>
+				<p>支持支付宝、财付通、微信、银行卡、网银</p>
+				<!--在线付款方式-->
+				<div class="online_way">
+					<p>
+						<input type="radio" name="pay" id="pay1">
+						<label for="pay1"><img src="../images/pay1.jpg" alt=""></label>
+					</p>
+					<p>
+						<input type="radio" name="pay" id="pay2">
+						<label for="pay2"><img src="../images/pay2.jpg" alt=""></label>
+					</p>
+					<p>
+						<input type="radio" name="pay" id="pay3">
+						<label for="pay3"><img src="../images/pay3.jpg" alt=""></label>
+					</p>
+					<p>
+						<input type="radio" name="pay" id="pay4">
+						<label for="pay4"><img src="../images/pay4.jpg" alt=""></label>
+					</p>
+					<p>
+						<input type="radio" name="pay" id="pay5">
+						<label for="pay5"><img src="../images/pay5.jpg" alt=""></label>
+					</p>
+				</div>
+			</div>
+			<div class="pay_way pay_way_on">
+				<input type="radio" id="p_w_o" name="pay-way">
+				<h4>货到付款</h4>
+				<p>送货上门后再付款。</p>
+			</div>
+		</div>
+		<!--商品信息-->
+		<div class="goods_info">
+			<div class="goods_title">订单商品信息</div>
+			<p class="turn"><a href="shopcar.html">返回购物车修改</a></p>
+			<div class="goods_table">
+				<div class="g_head">
+					<ul class="row">
+						<li class="name">商品信息</li>
+						<li class="price">单价（元）</li>
+						<li class="amount">数量</li>
+						<li class="subtotal">小计（元）</li>
+					</ul>
+				</div>
+				<!--已选购的商品-->
+				<div class="shoppingcon">
+					<div class="c_meg">
+						<dl>
+							<dt><a href="##"><img src="../images/3 (16).jpg" alt=""></a></dt>
+							<dd>
+								<p>[苏泊尔] SJYZ8T-150 原汁机 白色</p>
+								<p>颜色：白色</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="c_price">
+						<p>&yen;<span>699</span></p>
+					</div>
+					<div class="c_amount">
+						<p class="num">
+							x<span class="g_num">1</span>
+						</p>
+					</div>
+					<div class="c_subtotal">
+						<p>&yen;<span>1398</span></p>
+					</div>
+				</div>
+				<!--使用优惠券-->
+				<div class="coupon">
+					<p class="p_ticket"><span id="ticket_1">使用优惠券</span></p>
+					<div class="ticket_con">
+						<ul class="ticket_nav">
+							<li class="active">可用优惠券<span>(0)</span></li>
+							<li>不可用优惠券<span>(0)</span></li>
+						</ul>
+						<!--优惠码内容-->
+						<div class="coupon_con">
+							<!--可用优惠券-->
+							<div class="show ticket_able">
+								<p class="useable_dashed">此订单暂无可用优惠码</p>
+								<p>有优惠券兑换码？ <a href="##">点击输入兑换码</a></p>
+							</div>
+							<!--不可用优惠券-->
+							<div class="unusable"></div>
+						</div>
+					</div>					
+				</div>
+				<!--使用积分-->
+				<div class="integral">
+					<p class="p_ticket"><span id="p_ticket">使用积分</span>&nbsp;&nbsp;&nbsp;（现有积分<i id="curr_s">0</i>）</p>
+					<div class="integral_con">
+						<h5>请输入您想使用的积分</h5>
+						<p class="integral_convert">
+							<input id="use_s" type="text" placeholder="200积分=1元">
+							<span id="i_use">使用</span>
+						</p>
+						<p class="integral_tip">
+							积分不足！
+						</p>
+					</div>					
+				</div>
+				<!--其他信息-->
+				<div class="others">
+					<div class="other_info">
+						<p class="o_title">
+							<span>其他信息：</span><input type="checkbox" id="fp"><label for="fp">发票</label>	
+						</p>
+						<div class="invoice_box">
+							<p>发票类型：
+								<input type="radio" id="dz" name="fp"> 
+								<label for="dz"> 电子发票</label>
+								<input type="radio" name="fp" id="zz" checked="checked"> 
+								<label for="zz"> 纸质发票</label>
+							</p>
+							<p>发票内容：商品明细</p>
+							<div class="i_fp i_fp1">
+								<span>发票抬头：</span>
+								<input type="radio" name="t_t" id="gr" checked="checked"><label for="gr">个人</label>
+								<p>
+									<span style="display:inline-block;width:56px"></span>
+									<input type="radio" name="t_t" id="dw"><label for="dw">单位</label><input id="dw_name" type="text">
+								</p>
+							</div>
+							<div class="i_fp i_fp2">
+								<p><span>发票抬头：</span>个人</p>
+								<p><span>手机号码：</span> 18380461894 &nbsp;&nbsp;&nbsp;&nbsp;<a href="##"> 修改</a></p>
+								<p>
+									<span style="display:inline-block;width:56px"> </span> <a href="##">电子发票相关问题</a>
+								</p>
+							</div>
+						</div>
+						<div class="o_count">
+							<p><b>商品金额：</b><span><i>&yen;</i>1198</span></p>
+							<p><b>运费：</b><span><i>&yen;</i>0</span>元(免运费)</p>
+							<p><b>积分抵现：</b><span>-<i>&yen;</i>0</span>元</p>
+							<p><b>优惠：</b><span>-<i>&yen;</i>0</span></p>
+							<p class="o_bold"><b>实付金额：</b><span><i>&yen;</i>1198</span></p>
+						</div>
+						<p class="o_put"><input id="o_btn" type="button" value="提交订单"></p>
+						<p class="o_address">送至：</p>
+						<p class="o_person">收货人：</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--footer-->
+	<div class="footercon">
+		<div class="footer">
+			<div class="temai">
+				<a href="javascript:;"><img src="../images/footer_ad.jpg" /></a>
+			</div>
+			<div class="submenu">
+				<div class="sublist">
+					<h2>新手上路</h2>
+					<a href="javascript:;">新用户注册</a>
+					<a href="javascript:;">忘记密码</a>
+					<a href="javascript:;">购物流程</a>
+				</div>
+				<div class="sublist">
+					<h2>支付配送</h2>
+					<a href="javascript:;">货到付款</a>
+					<a href="javascript:;">支付宝</a>
+					<a href="javascript:;">配送方式</a>
+				</div>
+				<div class="sublist">
+					<h2>会员服务</h2>
+					<a href="javascript:;">服务承诺</a>
+					<a href="javascript:;">会员制度</a>
+					<a href="javascript:;">积分介绍</a>
+					<a href="javascript:;">退换货原则</a>
+				</div>
+				<div class="sublist no_border">
+					<h2>关于优品惠</h2>
+					<a href="javascript:;">企业介绍</a>
+					<a href="javascript:;">联系我们</a>
+					<a href="javascript:;">招商专区</a>
+				</div>
+				<div class="foot_ewm">
+					<img src="../images/foot_ewm.jpg" />
+					<p>手机优品惠</br><span>(优购物)</span></p>
+				</div> 
+				<div class="foot_dh">
+					<img src="../images/foot_dh.jpg" />
+				</div>			
+			</div>
+		</div>
+
+		<!--copyright-->
+		<div class="copyright">
+			<p>
+				<a href="#">首页</a>|<a href="#">关于优品惠</a>|<a href="#">优购网</a>|<a href="#">惠买集团</a>|<a href="#">联系我们</a>|<a href="#">招贤纳士</a>|<a href="#">招商专区</a>|<a href="#">供应商入口</a>|<a href="#">友情链接</a>|<a href="#">网站地图</a>|<a href="#">资讯中心</a>|<a href="#">评论</a>|<a href="#">图片</a>
+			</p>
+			<div class="links">
+				优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.
+			</div>
+			<p class="copy">Copyright&copyright;2007-2016 公司名称:北京优品惠网络科技有限公司 统一社会信用代码:91110302339739621C  ICP备案号:京ICP备15039150号-1 食品经营许可证编号:JY11131010332635</p>
+			<p class="copy">公司地址:北京市经济技术开发区同济南路19号 服务热线：400-707-0707</p>
+			<p class="copy"><img src="../images/bei.png" alt="">京公网安备 11030102000055号</p>
+		</div>
+	</div>
+	
+	<!--右边侧栏-->
+	<div class="outer_line"></div>
+	<div class="right_scroll">
+		<ul class="bar_top">
+			<li class="bar1">
+				<div class="bar1_hide">
+					<span class="bar1_close"></span>
+					<div class="bar1_info">
+						<a class="bar1_pic" href="##"><img src="../images/user.jpg" alt=""></a>
+						<p class="bar1_tip">您好！请 <a href="load.html"> 登录</a>|<a href="register.html">注册</a></p>
+						<p class="bar1_tickt">
+							<a>我的订单</a>
+							<a>优惠券</a>
+						</p>
+					</div>
+				</div>
+			</li>
+			<li class="bar2">
+				<p><a href="shopcar.html">购物车</a></p>
+			</li>
+			<li class="bar3">
+				<p><a href="##">我的关注</a></p>
+			</li>
+			<li class="bar4">
+				<p><a href="##">在线客服</a></p>
+			</li>
+		</ul>
+
+		<script type="text/javascript">
+			$(function(){
+				$(".bar1_close").click(function(){
+					$(".bar1_hide").hide();
+				});
+				$(".bar1").hover(function(){
+					$(".bar1_hide").show();
+				},function(){
+					$(".bar1_hide").hide();
+				});
+			});
+		</script>
+
+		<ul class="bar_fot">
+			<li class="bar5">
+				<p><a href="#"><img src="../images/code.jpg" alt=""></a></p>
+			</li>
+			<li class="bar6">
+				<p><a href="##">调查问卷</a></p>
+			</li>
+			<li class="bar7"><a href="#"></a>
+				<p><a href="#">回到顶部</a></p>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			$(function(){
+				$(".bar_fot li").hover(function(){
+					$(this).children("p").show().end()
+						   .siblings().children("p").hide();
+				}, function(){
+					$(this).children("p").hide();
+				});;
+			});
+		</script>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,591 @@
+body{
+	background: #fff;
+}
+.notice{
+	background: #F2F2F2;
+}
+i{
+	font-style: normal;
+}
+/*   top    */
+.top{
+	width:100%;
+	height:80px;
+	background:#0492ff;
+}
+.topcon{
+	width:1000px;
+	margin:0 auto;
+}
+.topcon img{
+	display: block;
+	width:100%;
+	height:80px;
+}
+
+/*  log  */
+.logo{
+	width: 100%;
+	background: #fff;
+}
+.logocon{
+	width:1000px;
+	height:59px;
+	margin:20px auto;
+}
+.ugo_pic{
+	width: 190px;
+	height: 59px;
+	float: left;
+}
+.steps{
+	width: 550px;
+	height: 59px;
+	float: right;
+}
+.steps p{
+	float: right;
+	width: 380px;
+	height: 40px;
+	padding-right: 50px;
+	background: url(../images/step2.png) no-repeat center bottom;
+}
+.carinfo{
+	float: left;
+	width: 550px;
+	height: 18px;
+	line-height: 18px;
+}
+.carinfo span{
+	display: block;
+	float: left;
+	width: 182px;
+	text-align: right;
+}
+.carinfo .steping{
+	color: #FF504A;
+}
+
+/* 确认订单信息 */
+.affirm{
+	width:1000px;
+	margin:0 auto;
+}
+.affirm_title{
+	height: 32px;
+	line-height: 32px;
+	font-size: 16px;
+}
+.affirm_table,.pay_table,.goods_info{
+	width: 960px;
+	margin-bottom: 12px;
+	padding:19px;
+	border: 1px solid #E8E8E8;
+	overflow: hidden;
+}
+
+/* 收货地址表单  */
+.a_title,.pay_title,.goods_title{
+	height:18px;
+	line-height: 18px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-indent: 10px;
+	border-left:3px solid #FF504A;
+}
+ form{
+ 	margin: 27px 10px 15px 20px
+ }
+ form dl{
+ 	padding-bottom: 10px;
+ 	overflow: hidden;
+ }
+ form dl i{
+ 	color: #FF504A;
+ }
+ form dt{
+ 	float: left;
+ 	line-height: 28px;
+ 	height: 28px;
+ 	letter-spacing: 2px;
+ 	width: 78px;
+ }
+ form dd{
+ 	float: left;
+ }
+ .consignee{
+ 	width: 180px;
+ }
+ dd input{
+ 	height:26px;
+ 	border: 1px solid #ccc;
+ 	color: #444;
+ 	padding:0 5px;
+ 	line-height: 26px;
+ }
+ .consignee input{
+ 	width: 168px;
+ }
+ .d_name{
+ 	color: #FF504A;
+ 	height:14px;
+ 	line-height: 14px;
+ 	padding-top: 3px;
+ 	padding-left: 20px;
+ 	background: url(../images/ti.png) no-repeat 0 3px;
+ 	display: none;
+ }
+ dd select{
+ 	width:140px;
+	height:26px;
+	border: 1px solid #ccc;
+	color: #444;
+	margin-right: 3px;
+	margin-top: 3px;
+ }
+ .dd{
+ 	height: auto;
+ }
+.dd input{
+	width: 424px;
+}
+.dd p{
+	color: #FF504A;
+	height:14px;
+	line-height: 14px;
+	padding-top: 3px;
+	padding-left: 20px;
+	background: url(../images/ti.png) no-repeat 0 3px;
+	display: none;
+}
+.save{
+	width: 120px;
+}
+.save input{
+	width: 120px;
+	height: 28px;
+	border: 0;
+	background: #FF504A;
+	color: #fff;
+	text-align: center;
+}
+
+/*  支付方式  */
+.pay_way{
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.pay_way input{
+	display: block;
+	width: 23px;
+	float: left;
+}
+.pay_way h4{
+	width: 104px;
+	float: left;
+}
+.pay_way p{
+	width: 270px;
+	float: left;
+}
+
+/* 在线付款方式 */
+.online_way{
+	width: 920px;
+	padding:5px 20px;
+	float: left;
+	display: none;
+}
+.online_way img{
+	width: 168px;
+	height: 42px;
+	border: 1px solid #E8E8E8;
+	cursor: pointer;
+}
+.online_way p{
+	width: 225px;
+	float: left;
+	padding-bottom: 7px;
+}
+.online_way p input{
+	margin-top: 15px;
+	margin-right: 5px;
+}
+
+/*   商品信息   */
+.goods_info .turn{
+	height: 17px;
+	padding-bottom: 10px;
+}
+.goods_info .turn a{
+	color: #666;
+	float: right;
+}
+.goods_info .turn a:hover{
+	text-decoration: underline;
+}
+.goods_info .goods_table{
+	width: 958px;
+	border: 1px solid #E8E8E8;
+}
+.g_head{
+	height: 37px;
+	padding:0 20px;
+	color: #666;
+	background: #F2F2F2;
+	border-bottom: 1px solid #E8E8E8;
+}
+.g_head .row{
+	float: left;
+	height: 32px;
+}
+.row li{
+	float: left;
+	height: 17px;
+	line-height: 17px;
+	text-align: center;
+	padding: 10px 0;
+}
+.row .name{
+	width: 440px;
+}
+.row .price{
+	width: 180px;
+}
+.row .amount{
+	width: 140px;
+}
+.row .subtotal{
+	width: 140px;
+}
+
+/* 已选购的商品 */
+.shoppingcon{
+	height:84px;
+	margin:0 20px;
+	padding:15px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+.c_meg{
+	width: 455px;
+	height:84px;
+	float: left;
+}
+.c_meg dl{
+	overflow: hidden;
+}
+.c_meg dt{
+	width: 78px;
+	height:78px;
+	float: left;
+	border: 1px solid #e8e8e8;
+}
+.c_meg dt img{
+	display: block;
+	width: 78px;
+	height: 78px;
+}
+.c_meg dd{
+	float: left;
+	width: 280px;
+	padding-left: 15px;
+}
+.c_meg dd p{
+	height: 18px;
+	line-height: 18px;
+}
+.c_price{
+	width: 140px;
+	float: left;
+	margin-right: 30px;
+	padding-top: 33px;
+	text-align: center;
+	color: #666;
+}
+.c_amount{
+	float: left;
+	width: 140px;
+	padding-top: 26px;
+}
+.c_amount .num{
+	height:24px;
+	line-height: 24px;
+	text-align: center;
+}
+.c_subtotal{
+	width: 140px;
+	float: left;
+	height:24px;
+	padding-top: 26px;
+	font-weight: bold;
+	font-size: 14px;
+	text-indent: 10px;
+	text-align: center;
+}
+
+/* 使用优惠券 */
+.coupon,.integral{
+	padding:20px;
+}
+.coupon{
+	padding-bottom: 0;
+}
+.p_ticket{
+	padding-bottom: 15px; 
+}
+.p_ticket span{
+	display: inline-block;
+	width: 60px;
+	height:24px;
+	line-height: 24px;
+	padding:0 22px 0 7px;
+	color: #FF504A;
+	border:1px solid #FF504A;
+	border-radius: 3px;
+	background: url(../images/x.png) no-repeat 73px center;
+	cursor: pointer;
+}
+.ticket_con{
+	display: none;
+	padding-bottom:15px;
+}
+.ticket_nav{
+	overflow: hidden;
+}
+.ticket_nav li{
+	position: relative;
+	z-index: 2;
+	float: left;
+	z-index: 2;
+	width: 150px;
+	height:34px;
+	line-height: 34px;
+	color: #666;
+	cursor: pointer;
+	text-align: center;
+	background: #f8f8f8;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #ffebd4;
+	border-right: 1px solid #f1f1f1;
+	border-left: 1px solid #f1f1f1;
+	
+}
+.ticket_nav li.active{
+	color: #222;
+	background: #fffbf7;
+	border-top: 1px solid #ffebd4;
+	border-bottom: 1px solid #fffbf7;
+	border-right: 1px solid #ffebd4;
+	border-left: 1px solid #ffebd4;
+}
+
+/* 优惠码内容 */
+.coupon_con{
+	position: relative;
+	top:-1px;
+	padding: 18px 30px;
+	background: #fffbf7;
+	border: 1px solid #ffebd4;
+	color: #666;
+}
+.coupon_con div{
+	display: none;
+}
+.coupon_con .show{
+	display: block;
+}
+
+/* 可用优惠券 */
+.ticket_able p{
+	padding: 10px 0;
+}
+.ticket_able .useable_dashed{
+	border-bottom: 1px dashed #e8e8e8;
+}
+.ticket_able a{
+	color: #2666E3;
+}
+.ticket_able a:hover{
+	text-decoration: underline;
+}
+
+/*不可用优惠券*/
+.unusable{
+	display: none;
+}
+
+/* 使用积分 */
+.integral{
+	padding-top: 0;
+}
+.p_ticket i{
+	font-style: normal;
+}
+.integral_con{
+	display: none;
+	padding: 18px 30px;
+	background: #fffbf7;
+	border: 1px solid #ffebd4;
+}
+.integral_con h5{
+	color: #666;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+.integral_convert{
+	height:30px;
+	padding-bottom: 10px;
+}
+.integral_convert input{
+	width:212px;
+	height:28px;
+	line-height: 28px;
+	border: 1px solid #ddd;
+	color: #999;
+	padding:0 8px;
+	float: left;
+	margin-right: 10px;
+}
+.integral_convert span{
+	display: inline-block;
+	height: 30px;
+	padding:0 20px;
+	line-height: 30px;
+	background: #FF504A;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.integral_convert span:hover{
+	background: #f70800;
+}
+.integral_tip{
+	display: none;
+	color: #FF504A;
+	height: 14px;
+	line-height: 14px;
+	padding-top: 3px;
+	padding-left: 20px;
+	background: url(../images/ti.png) no-repeat 0 3px;
+}
+
+/* 其他信息 */
+.others{
+	border-top:1px solid #e8e8e8;
+	padding:20px;
+	background: #F8F8F8;
+}
+.other_info{
+	position: relative;
+	overflow: hidden; 
+}
+.o_title{
+	width: 320px;
+	height:22px;
+	line-height: 22px;
+	float: left;
+	
+}
+.o_title span{
+	padding-right:20px;
+}
+.o_title input{
+	margin-right: 5px;
+}
+.invoice_box{
+	padding-left:80px;
+	width:500px;
+	position: absolute;
+	left: 0;
+	top:35px;
+	color: #666;
+	display: none;
+}
+.invoice_box p{
+	/* height:30px; */
+	line-height: 30px;
+}
+.invoice_box p input{
+	margin-left: 5px;
+}
+.i_fp a{
+	color: #222;
+}
+.i_fp a:hover{
+	text-decoration: underline;
+}
+.i_fp2{
+	display: none;
+}
+#dw_name{
+	outline:none;
+	margin-left:30px;
+	height:24px;
+	border: 1px solid #ccc;
+	text-indent: 10px;
+	display: none;
+}
+
+.o_count{
+	width:170px;
+	float: right;
+}
+.o_count p{
+	text-align: right;
+	line-height: 24px;
+}
+.o_count p b{
+	font-weight: normal;
+	display: block;
+	width: 70px;
+	text-align: right;
+	float: left;
+}
+.o_bold{
+	font-weight: bold;
+	font-size: 18px;
+	color: #f70800;
+}
+.o_count .o_bold b{
+	font-weight: bold;
+	font-size: 12px;
+	color: #222;
+}
+.o_bold i{
+	font-weight: normal;
+}
+.o_put{
+	float: right;
+	width: 100%;
+	height:32px;
+	padding:20px 0;
+}
+.o_put input{
+	width: 144px;
+	height:30px;
+	border: 0;
+	float: right;
+	text-align: center;
+	color: #fff;
+	background: #FF504A;
+}
+.o_put input:hover{
+	background: #f70800;
+}
+.o_address,.o_person{
+	width: 100%;
+	height:22px;
+	text-align: right;
+	float: right;
+}
+
+/*  footer  */
+.footercon{
+	width: 1000px;
+	margin:0 auto;
+	border-top: 1px solid #e8e8e8;
+	margin-top: 15px;
+}
+
+
+

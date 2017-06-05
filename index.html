@@ -1,0 +1,1521 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" style="text/css" href="css/base.css">
+	<link rel="stylesheet" style="text/css" href="css/style.css">
+</head>
+<body>
+
+<!--top-->
+<div class="top">
+	<div class="topcon"><img src="images/top.jpg" alt=""></div>
+</div>
+<!--公告-->
+<div class="notice">
+	<div class="noticecon">
+		<div class="notice_list" id="notice_list">
+			<span>公告：</span>
+			<ul id="notice_ul">
+				<li class="show_notice" ><a href="#">【公告】防诈骗提醒</a></li>
+				<li><a href="#">【紧急通知】关于短信发送异常的公告</a></li>
+				<li><a href="#">优品惠(优购物)5周年庆，盛大聚“惠”</a></li>
+				<li><a href="#">【注意】自主语音订购说明</a></li>
+				<li class="show_notice" ><a href="#">【公告】防诈骗提醒</a></li>
+			</ul>		
+		</div>	
+		<div class="topnav">
+			<ul>
+				<li><span><a href="html/register.html">注册</a></span>|</li>
+				<li><span><a href="html/load.html">登录</a></span>|</li>
+				<li><span><a href="html/order.html">我的订单</a></span>|</li>
+				<li><span><a href="##">物流查询</a></span>|</li>
+				<li><span><a href="##">我的关注</a></span>|</li>
+				<li><span><a href="##">资讯</a></span>|</li>
+				<li><span><a href="##">品牌馆</a></span>|</li>
+				<li class="nav_ewm">
+					<span><a href="##"><img src="images/phone.png" />手机优品惠</a></span>
+					<div class="phone_ewm">
+						<img src="images/foot_ewm.jpg" alt="">
+						<p>扫一扫哦~</p>
+					</div>
+				</li>
+			</ul>
+		</div>	
+	</div>
+</div>	
+<!--logo-->
+<div class="logo">
+	<div class="logocon">
+		<div class="logo_pic">
+			<div><a href="#"><img src="images/logo.png" /></a></div>
+			<p><a href="#"><img src="images/logom.jpg" /></a></p>
+		</div>
+		<div class="search">
+			<input class="text" type="text" placeholder="请输入商品名称或货号">
+			<input class="button" type="button" value="搜索">
+		</div>
+		<div class="shopcar">
+			<div class="shopcar_box">
+				<img src="images/gwc.png" />
+				<a href="html/shopcar.html">我的购物车</a>
+			</div>
+			<span>0</span>
+			<div class="cart_con">
+				<p>购物车还没有商品，快去挑选吧~</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--nav-->
+<div class="nav">
+	<div class="navcon">
+		<ul class="navcon_list">
+			<li><a class="active" href="index.html">首页</a></li>
+			<li><a class="tv" href="javascript:;">视频</a></li>
+			<li><a href="javascript:;">食品</a></li>
+			<li><a href="javascript:;">家居</a></li>
+			<li><a href="javascript:;">美妆</a></li>
+			<li><a href="javascript:;">服饰</a></li>
+			<li><a href="javascript:;">海外购</a></li>
+		</ul>
+		<div id="sorts">
+			<p class="sort"></p>
+			<div class="all_sort">
+				<div>
+					<h3 class="kind1"><a href="#">品质厨房</a></h3>
+					<ul>
+						<li><a href="html/list.html">电视热销</a></li>
+						<li><a href="#">品质厨具</a></li>
+						<li><a href="#">厨房电器</a></li>
+						<li><a href="#">厨房用具</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind2"><a href="#">美食·民生</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">进口食品</a></li>
+						<li><a href="#">营养保健</a></li>
+						<li><a href="#">特产零食</a></li>
+						<li><a href="#">粮油干货</a></li>
+						<li><a href="#">酒水茶饮</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind3"><a href="#">健康生活</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">优质睡眠</a></li>
+						<li><a href="#">家具装饰</a></li>
+						<li><a href="#">清洁收纳</a></li>
+						<li><a href="#">家庭健身</a></li>
+						<li><a href="#">生活电器</a></li>
+						<li><a href="#">日用配件</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind4"><a href="#">魅力穿戴</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">服装内衣</a></li>
+						<li><a href="#">鞋包配饰</a></li>
+						<li><a href="#">旅游户外</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind5"><a href="#">珠宝收藏</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">珍珠彩宝</a></li>
+						<li><a href="#">翡翠玉石</a></li>
+						<li><a href="#">天然木饰</a></li>
+						<li><a href="#">文化收藏</a></li>
+					</ul>
+				</div>
+				<div class="last">
+					<h3 class="kind6"><a href="#">美肤靓装</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">品牌护肤</a></li>
+						<li><a href="#">洗护护理</a></li>
+						<li><a href="#">彩妆香水</a></li>
+						<li><a href="#">美容仪器</a></li>
+					</ul>
+				</div>
+
+			</div> 
+		</div>		
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$(".sort,.all_sort").hover(function(){
+			$(".all_sort").show();
+			$(".sort").css({backgroundPosition:"0 -133px"});
+		},function(){
+			$(".all_sort").hide();
+			$(".sort").css({backgroundPosition:"0 -65px"});
+		});
+	});	
+</script>
+
+<!--轮播图-->
+<div class="banner" id="banner">
+	<ul class="pic">
+		<!-- <li><a href="#"><img src="images/banner4.jpg" /></a></li> -->
+		<li class="curr"><a href="#"><img src="images/banner1.jpg" /></a></li>
+		<li><a href="#"><img src="images/banner2.jpg" /></a></li>
+		<li><a href="#"><img src="images/banner3.jpg" /></a></li>
+		<li><a href="#"><img src="images/banner4.jpg" /></a></li>
+		<!-- <li><a href="#"><img src="images/banner1.jpg" /></a></li> -->
+	</ul>
+	<div class="dots" id="dots">
+		<!--<a class="curr" href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>-->
+	</div>
+	<div id="pages">
+		<a id="prev" href="##"></a>
+		<a id="next" href="##"></a>
+	</div>
+</div>
+
+<!--左侧广告-->
+<div class="left_scroll">
+	<img src="images/left_scroll.png" />
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		var content_top = $(".content").offset().top;
+		$(window).on("scroll", function(){
+			var scrollTop = $(this).scrollTop();
+			if(scrollTop > content_top){
+				$(".left_scroll").css({position:"fixed",left:0,top:0});
+			} else{
+				$(".left_scroll").css({position:"relative"});
+			}
+		});
+	});
+	
+</script>
+
+<!--content-->
+<div class="content">
+	<div class="content_left">
+		<div class="turn_box turn_active">
+			<div class="img_box">
+				<a href="#"><img src="images/m1.jpg" /></a>
+                <div class="today_jx"></div>
+			</div>
+			<div class="text_box">
+				<h2><a href="#">韩束新红石榴六件套（单件仅45元）</a></h2>
+				<p>【买手说】帮助排走肌肤表层内的沉淀杂质，减退暗哑，淡化憔悴痕迹。含石榴多酚及花青素，改善暗沉...</p>
+				<div class="price">
+					<p><span>&yen;</span>259</p>
+					<div>
+						<i>包邮</i>
+						<del>&yen;598</del>
+					</div>
+				</div>
+				<div class="grade">
+					<h3>
+						<a href="#">
+						<img src="images/user.jpg" /><b>156****1890</b>
+						</a>
+					</h3>
+					<p>很好，老妈非常喜欢，赶活动时候买的，还便宜了100超实惠。给老妈寄去了，没有照片。</p>
+				</div>
+			</div>
+		</div>
+		<div class="turn_box">
+			<div class="img_box">
+				<a href="#"><img src="images/m2.jpg" /></a>
+                <div class="today_jx"></div>
+			</div>
+			<div class="text_box">
+				<h2><a href="#">[海朴]海洋美味大礼包12盒12种口味 </a></h2>
+				<p>【买手说】精美礼盒包装 送礼好选择 </p>
+				<div class="price">
+					<p><span>&yen;</span>169</p>
+					<div>
+						<i>包邮</i>
+						<del>&yen;198</del>
+					</div>
+				</div>
+				<div class="grade">
+					<h3>
+						<a href="#">
+						<img src="images/user.jpg" /><b>183****4694</b>
+						</a>
+					</h3>
+					<p>很好，老妈非常喜欢，赶活动时候买的，还便宜了100超实惠。给老妈寄去了，没有照片。</p>
+				</div>
+			</div>
+		</div>
+		<div class="turn_box">
+			<div class="img_box">
+				<a href="#"><img src="images/m3.jpg" /></a>
+                <div class="today_jx"></div>
+			</div>
+			<div class="text_box">
+				<h2><a href="#">十月稻田五常稻花香大米5kg送500g*4袋 </a></h2>
+				<p>【买手说】十月稻田稻花香大米 真空包装 口感香甜软糯 </p>
+				<div class="price">
+					<p><span>&yen;</span>139</p>
+					<div>
+						<i>包邮</i>
+						<del>&yen;198</del>
+					</div>
+				</div>
+				<div class="grade">
+					<h3>
+						<a href="#">
+						<img src="images/user.jpg" /><b>187****1894</b>
+						</a>
+					</h3>
+					<p>非常非常好吃的大米。清香可口。吃完一定一定还会再买呢。</p>
+				</div>
+			</div>
+		</div>
+		<div class="turn_box">
+			<div class="img_box">
+				<a href="#"><img src="images/m4.jpg" /></a>
+                <div class="today_jx"></div>
+			</div>
+			<div class="text_box">
+				<h2><a href="#">君玉楼路路通翡翠A货吊坠</a></h2>
+				<p>【小编说】小编说】精选大料精细打磨而成，颗颗盈润，翠绿。 </p>
+				<div class="price">
+					<p><span>&yen;</span>967</p>
+					<div>
+						<i>包邮</i>
+						<del>&yen;1098</del>
+					</div>
+				</div>
+				<div class="grade">
+					<h3>
+						<a href="#">
+						<img src="images/user.jpg" /><b>159****1098</b>
+						</a>
+					</h3>
+					<p>大珠子9颗，直径约15mm，小珠子9颗，直径约8，手链长度约18cm,重量约65g </p>
+				</div>
+			</div>
+		</div>
+		<div class="turn_box">
+			<div class="img_box">
+				<a href="#"><img src="images/m5.jpg" /></a>
+                <div class="today_jx"></div>
+			</div>
+			<div class="text_box">
+				<h2><a href="#">尹家肉质鲜嫩沟帮子熏鸡4只+猪蹄3只（单件约29元）</a></h2>
+				<p>【买手说】肉质鲜嫩 香而不腻 有嚼劲 嚼劲有余香 </p>
+				<div class="price">
+					<p><span>&yen;</span>199</p>
+					<div>
+						<i>包邮</i>
+						<del>&yen;126</del>
+					</div>
+				</div>
+				<div class="grade">
+					<h3>
+						<a href="#">
+						<img src="images/user.jpg" /><b>183****1894</b>
+						</a>
+					</h3>
+					<p>味道很好，鸡很新鲜，打开后微波了几分钟，香味扑鼻，儿子很爱吃</p>
+				</div>
+			</div>
+		</div>
+		<div class="turn_box">
+			<div class="img_box">
+				<a href="#"><img src="images/m6.jpg" /></a>
+                <div class="today_jx"></div>
+			</div>
+			<div class="text_box">
+				<h2><a href="#">韩束新红石榴六件套（单件仅45元）</a></h2>
+				<p>【买手说】帮助排走肌肤表层内的沉淀杂质，减退暗哑，淡化憔悴痕迹。含石榴多酚及花青素，改善暗沉...</p>
+				<div class="price">
+					<p><span>&yen;</span>259</p>
+					<div>
+						<i>包邮</i>
+						<del>&yen;598</del>
+					</div>
+				</div>
+				<div class="grade">
+					<h3>
+						<a href="#">
+						<img src="images/user.jpg" /><b>182****1866</b>
+						</a>
+					</h3>
+					<p>很好，老妈非常喜欢，赶活动时候买的，还便宜了100超实惠。给老妈寄去了，没有照片。</p>
+				</div>
+			</div>
+		</div>
+		<div class="turn_box">
+			<div class="img_box">
+				<a href="#"><img src="images/m7.jpg" /></a>
+                <div class="today_jx"></div>
+			</div>
+			<div class="text_box">
+				<h2><a href="#">美国康宁锅166周年庆生装 </a></h2>
+				<p>【买手说】晶彩锅1升煮锅*1*个 晶彩锅1.5升煮锅*1*个 晶彩锅3升煮锅*1*个 </p>
+				<div class="price">
+					<p><span>&yen;</span>1259</p>
+					<div>
+						<i>包邮</i>
+						<del>&yen;1598</del>
+					</div>
+				</div>
+				<div class="grade">
+					<h3>
+						<a href="#">
+						<img src="images/user.jpg" /><b>136****0605</b>
+						</a>
+					</h3>
+					<p>很好，很实用，煮饭煲粥都可以。</p>
+				</div>
+			</div>
+		</div>
+        <div class="s_img">
+        	<ul>
+            	<li class="curr"><img src="images/s1.jpg" /></li>
+                <li><img src="images/s2.jpg" /></li>
+                <li><img src="images/s3.jpg" /></li>
+                <li><img src="images/s4.jpg" /></li>
+                <li><img src="images/s5.jpg" /></li>
+                <li><img src="images/s6.jpg" /></li>
+                <li><img src="images/s7.jpg" /></li>
+            </ul>
+        </div>
+        <div class="t_pages">
+        	<a id="t_prev" href="##"></a>
+        	<a id="t_next" href="##"></a>
+        </div>
+	</div>
+
+<!--content_right-->
+	<div class="content_right">
+		<h2><img src="images/tv_ugo.jpg" /></h2>
+        <div class="tv_ugo">
+        	<div class="ugo_pic">
+            	<img class="ugo1" src="images/ugo1.jpg" />
+                <p><img src="images/ic.png" /></p>
+            </div>
+            <div class="ugo_text">
+            	<p class="bt">善美天成碧玉合心观音佛对佩 青绿色</p>
+                <div class="tv_price">
+					<p><span>&yen;</span>1980</p>
+					<del>&yen;6980</del>
+				</div>
+				<p class="clock">距结束 <span>00:29:06</span></p>
+				<a href="#" class="buy">立即抢购 ></a>
+            </div>
+        </div>
+        <div class="live">
+        	<p><span>24小时</span>直播预告</p>
+        	<div class="l_box">
+        		<ul class="live_list">
+        			<li><a href="javascript:;"><img src="images/s1.jpg" /></a><p>08:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s2.jpg" /></a><p>08:30</p></li>
+        			<li><a href="javascript:;"><img src="images/s3.jpg" /></a><p>09:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s4.jpg" /></a><p>09:30</p></li>
+        			<li><a href="javascript:;"><img src="images/s5.jpg" /></a><p>10:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s6.jpg" /></a><p>11:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s1.jpg" /></a><p>12:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s2.jpg" /></a><p>13:30</p></li>
+        			<li><a href="javascript:;"><img src="images/s3.jpg" /></a><p>14:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s4.jpg" /></a><p>15:30</p></li>
+        			<li><a href="javascript:;"><img src="images/s5.jpg" /></a><p>16:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s6.jpg" /></a><p>17:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s1.jpg" /></a><p>18:00</p></li>
+        			<li><a href="javascript:;"><img src="images/s2.jpg" /></a><p>19:30</p></li>
+
+        		</ul>
+        	
+	        	<div class="l_pages">
+	        		<a id="l_prev" href="##"></a>
+	        		<a id="l_next" href="##"></a>
+	        	</div>
+	        </div>	
+        </div>
+        <div class="icon">
+        	<a href="#">
+        		<span class="icon1"></span>
+        		<p>TV直播表</p>
+        	</a>
+        	<a class="margin" href="#">
+        		<span class="icon2"></span>
+        		<p>今日推荐</p>
+        	</a>
+        	<a href="#">
+        		<span class="icon3"></span>
+        		<p>热销榜单</p>
+        	</a>
+        </div>
+	</div>
+</div>
+
+<!--main-->
+<div class="main">
+	<div class="colunm_tit">
+		<img src="images/well_chosen.jpg" />
+	</div>
+	<div class="colunm_pic">
+		<ul>
+			<li class="padding_right"><a href="javascript:;"><img src="images/colunm1.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/colunm2.jpg" alt=""></a></li>
+			<li class="padding_right"><a href="javascript:;"><img src="images/colunm3.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/colunm4.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<div class="colunm_tit">
+		<img src="images/golbal_goods.jpg" />
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/1.jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>		
+		<dl class="a_margin">
+			<dt><img src="images/1 (1).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/1 (2).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/1 (3).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/1 (4).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/1 (5).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/1 (6).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/1 (7).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/1 (8).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/1 (9).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/1 (10).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/1 (11).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/1 (12).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/1 (13).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/1 (14).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/1.jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/1 (11).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/1 (15).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (1).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (21).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (25).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (30).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (1).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (2).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (3).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (4).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (5).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (6).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (7).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (8).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (9).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (10).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (11).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (12).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (13).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (14).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (15).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (16).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (18).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (23).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (24).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (25).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (26).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (27).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (28).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (29).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (30).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (31).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="global_pic">
+		<dl>
+			<dt><img src="images/2 (32).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl class="a_margin">
+			<dt><img src="images/2 (33).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/2 (34).jpg"></dt>
+			<dd>
+				<div class="global_text">
+					<h2><a href="#">[韩后]乳清蛋白10周年专供16件（单件只需45元）</a></h2>
+					<h3><a href="#">[买家说]清透滋润，不粘腻</a></h3>
+				</div>
+				<div class="details">
+					<h3>
+						<span>&yen;</span>499 <del> &yen;1497</del>
+						<strong><b>4219人</b>已购买</strong>
+						<i>包邮</i>
+					</h3>
+				</div>
+				<div class="tax_bt">品牌，国内发货</div>
+			</dd>
+		</dl>
+	</div>
+</div>
+
+
+<!--footer-->
+<div class="footercon">
+	<div class="footer">
+		<div class="temai">
+			<a href="javascript:;"><img src="images/footer_ad.jpg" /></a>
+		</div>
+		<div class="submenu">
+			<div class="sublist">
+				<h2>新手上路</h2>
+				<a href="javascript:;">新用户注册</a>
+				<a href="javascript:;">忘记密码</a>
+				<a href="javascript:;">购物流程</a>
+			</div>
+			<div class="sublist">
+				<h2>支付配送</h2>
+				<a href="javascript:;">货到付款</a>
+				<a href="javascript:;">支付宝</a>
+				<a href="javascript:;">配送方式</a>
+			</div>
+			<div class="sublist">
+				<h2>会员服务</h2>
+				<a href="javascript:;">服务承诺</a>
+				<a href="javascript:;">会员制度</a>
+				<a href="javascript:;">积分介绍</a>
+				<a href="javascript:;">退换货原则</a>
+			</div>
+			<div class="sublist no_border">
+				<h2>关于优品惠</h2>
+				<a href="javascript:;">企业介绍</a>
+				<a href="javascript:;">联系我们</a>
+				<a href="javascript:;">招商专区</a>
+			</div>
+			<div class="foot_ewm">
+				<img src="images/foot_ewm.jpg" />
+				<p>手机优品惠</br><span>(优购物)</span></p>
+			</div> 
+			<div class="foot_dh">
+				<img src="images/foot_dh.jpg" />
+			</div>			
+		</div>
+	</div>
+
+	<!--copyright-->
+	<div class="copyright">
+		<p>
+			<a href="#">首页</a>|<a href="#">关于优品惠</a>|<a href="#">优购网</a>|<a href="#">惠买集团</a>|<a href="#">联系我们</a>|<a href="#">招贤纳士</a>|<a href="#">招商专区</a>|<a href="#">供应商入口</a>|<a href="#">友情链接</a>|<a href="#">网站地图</a>|<a href="#">资讯中心</a>|<a href="#">评论</a>|<a href="#">图片</a>
+		</p>
+		<div class="links">
+			友情链接：<a href="#">华为商城</a><a href="#">佐卡伊珠宝网</a><a href="#">华强北</a><a href="#">淘鞋网</a><a href="#">团购王</a><a href="#">中国零食网</a><a href="#">腕表名表</a><a href="#">太平洋家居产品库</a><a href="#">网上购物</a><a href="#">团购网</a><a href="#">钻石</a><a href="#">城市联盟</a><a href="#">手表</a><a href="#">九块邮</a><a href="#">婚礼珠宝</a><a href="#">如何开网店</a><a href="#">法国红酒品牌</a><a href="#">网酒网</a><a href="#">卷皮网</a><a href="#">免费试用</a><a href="#">钻戒网</a>
+			<span></span>
+		</div>
+		<p class="copy">Copyright&copyright;2007-2015 北京优购文化发展有限公司版权所有 京ICP备14018505号 食品流通许可证编号SP1103021310006741(1-1)</p>
+		<p class="copy">公司地址:北京市经济技术开发区同济南路19号 服务热线：400-707-0707</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var btn = false;
+	$(".links span").click(function(){
+		if(!btn){
+			$(this).css({background:"url(images/jianx.jpg) no-repeat center center"});
+			$(".links").css({height:"auto"});
+			btn = true;
+		} else {
+			$(this).css({background:"url(images/jian.jpg) no-repeat center center"});
+			$(".links").css({height:"22px"});
+			btn = false;
+		}
+		return btn;
+	});
+</script>
+
+<!--右边侧栏-->
+<div class="outer_line"></div>
+<div class="right_scroll">
+	<ul class="bar_top">
+		<li class="bar1">
+			<div class="bar1_hide">
+				<span class="bar1_close"></span>
+				<div class="bar1_info">
+					<a class="bar1_pic" href="##"><img src="images/user.jpg" alt=""></a>
+					<p class="bar1_tip">您好！请 <a href="html/load.html"> 登录</a>|<a href="html.register.html">注册</a></p>
+					<p class="bar1_tickt">
+						<a>我的订单</a>
+						<a>优惠券</a>
+					</p>
+				</div>
+			</div>
+		</li>
+		<li class="bar2">
+			<p><a href="html/shopcar.html">购物车</a></p>
+		</li>
+		<li class="bar3">
+			<p><a href="##">我的关注</a></p>
+		</li>
+		<li class="bar4">
+			<p><a href="##">在线客服</a></p>
+		</li>
+	</ul>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".bar1_close").click(function(){
+				$(".bar1_hide").hide();
+			});
+			$(".bar1").hover(function(){
+				$(".bar1_hide").show();
+			},function(){
+				$(".bar1_hide").hide();
+			});
+		});
+	</script>
+
+	<ul class="bar_fot">
+		<li class="bar5">
+			<p><a href="#"><img src="images/code.jpg" alt=""></a></p>
+		</li>
+		<li class="bar6">
+			<p><a href="##">调查问卷</a></p>
+		</li>
+		<li class="bar7"><a href="#"></a>
+			<p><a href="#">回到顶部</a></p>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		$(function(){
+			$(".bar_fot li").hover(function(){
+				$(this).children("p").show().end()
+					   .siblings().children("p").hide();
+			}, function(){
+				$(this).children("p").hide();
+			});;
+		});
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,391 @@
+html,body,div,ul,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,a,span{
+	margin:0;padding:0;
+}
+fieldset,img{
+	border:none;
+}
+img{
+	border:0;
+}
+ul,li{
+	list-style:none;
+} 
+a{
+	text-decoration:none;
+	color:#666;
+}
+a:hover{color:#F80801;}
+body{
+	font-size:12px;
+	background: #F2F2F2;
+	font-family:"微软雅黑";
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+input,select{
+	outline: none;
+}
+
+/*  公告  */
+.notice{
+	width:100%;
+	border-bottom:1px solid #ddd;	
+}
+.noticecon{
+	width: 1000px;
+	height:28px;
+	margin:0 auto;
+}
+.notice_list{
+	width:250px;
+	height:28px;
+	overflow: hidden;
+	float:left;
+	position:relative;
+}
+.notice_list span{
+	display: block;
+	width:60px;
+	line-height: 28px;
+	text-align: right;
+}
+.notice_list ul{
+	width:190px;
+	height:28px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.notice_list ul li{
+	height:28px;
+	line-height:28px;
+	width:190px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+
+}
+.topnav{
+	width:640px;
+	height:28px;
+	float:right;
+}
+.topnav ul li{
+	float:left;
+	line-height: 28px;
+}
+.topnav ul li a{
+	display: inline-block;
+	padding:0 11px;
+}
+.nav_ewm{
+	position: relative;
+}
+.phone_ewm{
+	position: absolute;
+	text-align: center;
+	color: #f70800;
+	z-index: 11;
+	top:28px;
+	left: -2px;
+	width:90px;
+	padding:8px 12px;
+	background: #fff;
+	box-shadow:0px 0px 3px #888888;
+	display: none;
+}
+.nav_ewm:hover .phone_ewm{
+	display: block;
+}
+.phone_ewm img{
+	display: block;
+	width: 90px;
+	height:90px;
+}
+
+
+/*  footer  */
+.footercon{
+	background: #fff;
+	overflow: hidden;
+	margin-top: 30px;
+	padding-bottom: 90px;
+}
+.footer{
+	width: 1000px;
+	margin:0 auto;
+	
+}
+.temai{
+	width: 1000px;
+	height: 102px;
+}
+.temai img{
+	display: block;
+	width: 1000px;
+	height:102px;
+}
+
+.submenu{
+	width:925px;
+	overflow: hidden;
+	padding:25px 0 25px 75px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.submenu .sublist{
+	width:137px;
+	height:115px;
+	float: left;
+	text-align: center;
+	border-right: 1px dashed #e6e6e6;
+}
+.submenu .no_border{
+	border-right: 0;
+}
+.submenu .sublist h2{
+	height:15px;
+	font-size: 15px;
+	color: #333;
+	font-weight: bold;
+	padding-top:5px;
+}
+.submenu .sublist a{
+	display: block;
+	height:11px;
+	font-size: 11px;
+	padding-top: 11px;
+}
+.submenu .foot_ewm{
+	float: left;
+	width:80px;
+	height:115px;
+	text-align: center;
+	padding-right: 25px;
+	padding-top:5px;
+}
+.foot_ewm img{
+	display: block;
+	width: 80px;
+	height:80px;
+}
+.foot_ewm p{
+	line-height: 20px;
+	color: #222;
+}
+.foot_ewm p span{
+	color: #999;
+}
+.foot_dh{
+	float: left;
+	padding-top: 30px;
+}
+
+/*  copyright  */
+.copyright{
+	width: 1000px;
+	margin:0 auto;
+	padding-top: 25px;
+}
+.copyright p{
+	color: #666;
+	text-align: center;
+}
+.copyright p a{
+	display: inline-block;
+	padding:0 13px;
+}
+.copyright .links{
+	padding-top: 10px;
+	color:#666;
+	position: relative;
+	line-height: 22px;
+}
+.copyright .links a{
+	padding: 0 10px;
+}
+.copyright .links span{
+	display: block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top:0;
+	right: 0;
+	cursor: pointer;
+	background: url(../images/jian.jpg);
+}
+.copyright .copy{
+	line-height: 22px;
+}
+
+/*  右边侧栏  */
+.outer_line{
+	position: fixed;
+	top:0;
+	right: 0;
+	height:100%;
+	z-index: 6;
+	border-right: 4px solid #222;
+}
+.right_scroll{
+	width:36px;
+	height:100%;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 0;
+}
+.bar_top{
+	width: 36px;
+	height:144px;
+	position: absolute;
+	top:50%;
+	right: 0;
+	margin-top: -72px;
+}
+.bar_top li{
+	position: relative;
+	z-index: 1;
+	width: 36px;
+	height:36px;
+	cursor: pointer;
+	background:url(../images/xfbj.png);
+}
+.bar1_hide{
+	width: 257px;
+	height:228px;
+	padding:2px;
+	position: absolute;
+	right:36px;
+	top:0;
+	background: url(../images/centerbj.jpg) no-repeat center center;
+	display: none;
+}
+.bar1_close{
+	position: absolute;
+	top:15px;
+	right:15px;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	background: url(../images/xfbj.png) no-repeat -69px -356px;
+}
+.bar1_close:hover{
+	background-position: -99px -356px;
+}
+.bar1_info{
+	margin-top:30px;
+	text-align: center;
+}
+.bar1_pic{
+	display: block;
+	width: 72px;
+	height:72px;
+	margin:0 auto;
+}
+.bar1_tip{
+	padding: 10px;
+}
+.bar1_tip a{
+	padding:6px;
+	color: #f70800;
+}
+.bar1_tickt{
+	margin-top:60px;
+	background: #f8f8f8;
+}
+.bar1_tickt a{
+	display: inline-block;
+	margin:10px;
+	width: 88px;
+	height:28px;
+	line-height: 28px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+}
+.bar1_tickt a:hover{
+	border-color: #f70800;
+}
+
+.bar2 p,.bar3 p,.bar4 p,.bar6 p,.bar7 p{
+	position: absolute;
+	top:0;
+	right: 36px;
+	width: 90px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: url(../images/xfbj.png) no-repeat 0 -412px;
+	display: none;
+}
+.bar5 p{
+	position: absolute;
+	top:-80px;
+	right: 36px;
+	display: none;
+}
+.bar2:hover p,.bar3:hover p,.bar4:hover p{
+	display: block;
+}
+.bar2 p a,.bar3 p a,.bar4 p a,.bar6 p a,.bar7 p a{
+	color: #fff;
+}
+.bar_top .bar2{
+	background-position: 0 -46px;
+}
+.bar_top .bar3{
+	background-position: 0 -92px;
+}
+.bar_top .bar4{
+	background-position: 0 -138px;
+}
+.bar_top .bar1:hover{
+	background-position: -46px 0;
+}
+
+.bar_top .bar2:hover{
+	background-position: -46px -46px;
+}
+.bar_top .bar3:hover{
+	background-position: -46px -92px;
+}
+.bar_top .bar4:hover{
+	background-position: -46px -138px;
+}
+.bar_fot{
+	width: 36px;
+	height: 102px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.bar_fot li{
+	position: relative;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	background:url(../images/xfbj.png);
+}
+.bar7 a{
+	display:inline-block;
+	width:36px;
+	height:36px;
+}
+.bar_fot .bar5{
+	background-position: 0 -184px;
+}
+.bar_fot .bar6{
+	background-position: 0 -230px;
+}
+.bar_fot .bar7{
+	background-position: 0 -276px;
+}
+.bar_fot .bar5:hover{
+	background-position: -46px -184px;
+}
+.bar_fot .bar6:hover{
+	background-position: -46px -230px;
+}
+.bar_fot .bar7:hover{
+	background-position: -46px -276px;
+}

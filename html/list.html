@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表</title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<link rel="stylesheet" style="text/css" href="../css/base.css">
+	<link rel="stylesheet" style="text/css" href="../css/list.css">
+
+</head>
+<body>
+<!--top-->
+<div class="top">
+	<div class="topcon"><img src="../images/listtop.jpg" alt=""></div>
+</div>
+
+<!--公告-->
+<div class="notice">
+	<div class="noticecon">
+		<div class="notice_list" id="notice_list">
+			<span>公告：</span>
+			<ul id="notice_ul">
+				<li class="show_notice" ><a href="#">【公告】防诈骗提醒</a></li>
+				<li><a href="#">【紧急通知】关于短信发送异常的公告</a></li>
+				<li><a href="#">优品惠(优购物)5周年庆，盛大聚“惠”</a></li>
+				<li><a href="#">【注意】自主语音订购说明</a></li>
+				<li class="show_notice" ><a href="#">【公告】防诈骗提醒</a></li>
+			</ul>		
+		</div>		
+		<div class="topnav">
+			<ul>
+				<li><span><a href="register.html">注册</a></span>|</li>
+				<li><span><a href="load.html">登录</a></span>|</li>
+				<li><span><a href="order.html">我的订单</a></span>|</li>
+				<li><span><a href="##">物流查询</a></span>|</li>
+				<li><span><a href="##">我的关注</a></span>|</li>
+				<li><span><a href="##">资讯</a></span>|</li>
+				<li><span><a href="##">品牌馆</a></span>|</li>
+				<li class="nav_ewm">
+					<span><a href="##"><img src="../images/phone.png" />手机优品惠</a></span>
+					<div class="phone_ewm">
+						<img src="../images/foot_ewm.jpg" alt="">
+						<p>扫一扫哦~</p>
+					</div>
+				</li>
+			</ul>
+		</div>	
+	</div>
+</div>
+
+<!--logo-->
+<div class="logo">
+	<div class="logocon">
+		<div class="logo_pic">
+			<div><a href="#"><img src="../images/logo.png" /></a></div>
+			<p><a href="#"><img src="../images/logom.jpg" /></a></p>
+		</div>
+		<div class="search">
+			<input class="text" type="text" placeholder="请输入商品名称或货号">
+			<input class="button" type="button" value="搜索">
+		</div>
+		<div class="shopcar">
+			<img src="../images/gwc.png" />
+			<a href="../html/shopcar.html">我的购物车</a>
+			<span>0</span>
+			<div class="cart_con">
+				<p>购物车还没有商品，快去挑选吧~</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--nav-->
+<div class="nav">
+	<div class="navcon">
+		<ul class="navcon_list">
+			<li><a class="active" href="../index.html">首页</a></li>
+			<li><a class="tv" href="javascript:;">视频</a></li>
+			<li><a href="javascript:;">食品</a></li>
+			<li><a href="javascript:;">家居</a></li>
+			<li><a href="javascript:;">美妆</a></li>
+			<li><a href="javascript:;">服饰</a></li>
+			<li><a href="javascript:;">海外购</a></li>
+		</ul>
+		<div id="sorts">
+			<p class="sort"></p>
+			<div class="all_sort">
+				<div>
+					<h3 class="kind1"><a href="#">品质厨房</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">品质厨具</a></li>
+						<li><a href="#">厨房电器</a></li>
+						<li><a href="#">厨房用具</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind2"><a href="#">美食·民生</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">进口食品</a></li>
+						<li><a href="#">营养保健</a></li>
+						<li><a href="#">特产零食</a></li>
+						<li><a href="#">粮油干货</a></li>
+						<li><a href="#">酒水茶饮</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind3"><a href="#">健康生活</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">优质睡眠</a></li>
+						<li><a href="#">家具装饰</a></li>
+						<li><a href="#">清洁收纳</a></li>
+						<li><a href="#">家庭健身</a></li>
+						<li><a href="#">生活电器</a></li>
+						<li><a href="#">日用配件</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind4"><a href="#">魅力穿戴</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">服装内衣</a></li>
+						<li><a href="#">鞋包配饰</a></li>
+						<li><a href="#">旅游户外</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="kind5"><a href="#">珠宝收藏</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">珍珠彩宝</a></li>
+						<li><a href="#">翡翠玉石</a></li>
+						<li><a href="#">天然木饰</a></li>
+						<li><a href="#">文化收藏</a></li>
+					</ul>
+				</div>
+				<div class="last">
+					<h3 class="kind6"><a href="#">美肤靓装</a></h3>
+					<ul>
+						<li><a href="#">电视热销</a></li>
+						<li><a href="#">品牌护肤</a></li>
+						<li><a href="#">洗护护理</a></li>
+						<li><a href="#">彩妆香水</a></li>
+						<li><a href="#">美容仪器</a></li>
+					</ul>
+				</div>
+
+			</div> 
+		</div>		
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$(".sort,.all_sort").hover(function(){
+			$(".all_sort").show();
+			$(".sort").css({backgroundPosition:"0 -133px"});
+		},function(){
+			$(".all_sort").hide();
+			$(".sort").css({backgroundPosition:"0 -65px"});
+		});
+	});	
+</script>
+
+<!-- classfiy_menu 分类菜单 上-->
+<div class="classfiy_menu">
+	<div class="menulist">
+		<ul>
+			<li class="menu1"><a href="##"></a><span>全部商品</span></li>
+			<li class="menu2"><a href="##"></a><span>电视热销</span></li>
+			<li class="menu3"><a href="##"></a><span>品质厨具</span></li>
+			<li class="menu4"><a href="##"></a><span>厨房电器</span></li>
+			<li class="menu5"><a href="##"></a><span>厨房用具</span></li>
+		</ul>
+	</div>
+</div>
+
+<!--quality 品质厨房 -->
+<div class="quality">品质厨房</div>
+
+<!--列表详情-->
+<div class="list_con">
+	<div class="list_header">
+		<p class="p_left">
+			快速查找：<a class="on" href="##">今日推荐</a>|<a href="##">销量</a><a href="##">上架时间</a><a href="##">价格</a>|<a href="##">特惠</a>
+		</p>
+		<p class="p_right">
+			<input type="checkbox" id="ziying"><label for="ziying">优品惠自营</label>&nbsp;&nbsp;
+			<input type="checkbox" id="ruzhu"><label for="ruzhu">入驻商家</label>
+		</p>
+	</div>
+	
+	<!--goods 商品列表-->
+	<div class="goods">
+		<div class="over_flow">
+			<dl>
+				<dt><a href="goods.html"><img src="../images/3 (6).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">瑞辰手工酸奶器 无需插电发酵 自制酸奶安全美味 </a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;299</del></p>
+						<p><b><span>&yen;</span>199</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">1531</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>199</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow margin">
+			<dl>
+				<dt><a href="goods.html"><img src="../images/3 (1).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (3).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (4).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow margin">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (5).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (2).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (8).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow margin">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (9).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (10).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (11).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow margin">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (12).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (13).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (14).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="over_flow margin">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (15).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				<dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p>
+				</dd> 
+			</dl>
+		</div>
+		<div class="over_flow">
+			<dl>
+				<dt><a href="##"><img src="../images/3 (16).jpg"></a></dt>
+				<dd class="goods_title"><a href="##">韩国进口惠人二代原汁机尊贵金（营养提取机 低速旋转）</a></dd>
+				<dd class="goods_price">
+					<div class="price_1">
+						<p><del>&yen;6880</del></p>
+						<p><b><span>&yen;</span>2598</b></p>
+					</div>
+					<div class="appraise">评论
+						<a href="##">3964</a>条
+					</div>
+				</dd>
+				<dd class="goodsStatus">
+					<div class="goods_label">
+						<span class="source">TV商品</span>
+						<span class="free">免运费</span>
+					</div>
+					<div class="score">
+						<span>积</span>
+						<i>2598</i>
+					</div>
+				</dd>
+				 <dd class="hide">
+					<h4>会员评价</h4>
+					<p>
+						<span><img src="../images/leftyin.jpg" alt=""></span>
+						<span class="pj">宝贝不错，好用，每次清洗比价费...</span>
+						<span><img src="../images/rightyin.jpg" alt=""></span>
+					</p> 
+				</dd>
+			</dl>
+		</div>
+	</div><!--goods-->
+</div>
+
+<!-- 商品hover事件 -->
+<script type="text/javascript">
+	$(function(){
+		$(".over_flow dl").hover(function(){
+			$(this).addClass("hover");
+			$(this).find(".hide").stop(true).show(500);
+			console.log($(this).children("dl"))
+		}, function(){
+			$(this).find(".hide").stop(true).hide(500);
+			$(this).removeClass("hover");
+			//$('.hide')
+		});
+	});
+</script>
+
+<!-- 阅读的页数 redline -->
+<div class="redline">
+	<p>
+		<a href="##" class="pag on">首页</a>
+		<a href="##" class="pag"><上一页</a>
+		<a href="##"  class="on">1</a>
+		<a href="##">2</a>
+		<a href="##">3</a>
+		<a href="##">4</a>
+		<a href="##">5</a>
+		<a href="##">6</a>
+		<a href="##">7</a>
+		<a href="##">8</a>
+		<a href="##" class="pag">下一页></a>
+		<a href="##" class="pag">末页</a>
+	</p>
+</div>
+
+<!-- classfiy_menu 分类菜单 下-->
+<div class="classfiy_menu classfiy_menu2">
+	<div class="menulist">
+		<ul>
+			<li class="menu1"><a href="##"></a><span>全部商品</span></li>
+			<li class="menu2"><a href="##"></a><span>电视热销</span></li>
+			<li class="menu3"><a href="##"></a><span>品质厨具</span></li>
+			<li class="menu4"><a href="##"></a><span>厨房电器</span></li>
+			<li class="menu5"><a href="##"></a><span>厨房用具</span></li>
+		</ul>
+	</div>
+</div>
+
+<!--footer-->
+<div class="footercon">
+	<div class="footer">
+		<div class="temai">
+			<a href="javascript:;"><img src="../images/footer_ad.jpg" /></a>
+		</div>
+		<div class="submenu">
+			<div class="sublist">
+				<h2>新手上路</h2>
+				<a href="javascript:;">新用户注册</a>
+				<a href="javascript:;">忘记密码</a>
+				<a href="javascript:;">购物流程</a>
+			</div>
+			<div class="sublist">
+				<h2>支付配送</h2>
+				<a href="javascript:;">货到付款</a>
+				<a href="javascript:;">支付宝</a>
+				<a href="javascript:;">配送方式</a>
+			</div>
+			<div class="sublist">
+				<h2>会员服务</h2>
+				<a href="javascript:;">服务承诺</a>
+				<a href="javascript:;">会员制度</a>
+				<a href="javascript:;">积分介绍</a>
+				<a href="javascript:;">退换货原则</a>
+			</div>
+			<div class="sublist no_border">
+				<h2>关于优品惠</h2>
+				<a href="javascript:;">企业介绍</a>
+				<a href="javascript:;">联系我们</a>
+				<a href="javascript:;">招商专区</a>
+			</div>
+			<div class="foot_ewm">
+				<img src="../images/foot_ewm.jpg" />
+				<p>手机优品惠</br><span>(优购物)</span></p>
+			</div> 
+			<div class="foot_dh">
+				<img src="../images/foot_dh.jpg" />
+			</div>			
+		</div>
+	</div>
+
+	<!--copyright-->
+	<div class="copyright">
+		<p>
+			<a href="#">首页</a>|<a href="#">关于优品惠</a>|<a href="#">优购网</a>|<a href="#">惠买集团</a>|<a href="#">联系我们</a>|<a href="#">招贤纳士</a>|<a href="#">招商专区</a>|<a href="#">供应商入口</a>|<a href="#">友情链接</a>|<a href="#">网站地图</a>|<a href="#">资讯中心</a>|<a href="#">评论</a>|<a href="#">图片</a>
+		</p>
+		<div class="links">
+			优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.
+		</div>
+		<p class="copy">Copyright&copyright;2007-2016 公司名称:北京优品惠网络科技有限公司 统一社会信用代码:91110302339739621C  ICP备案号:京ICP备15039150号-1 食品经营许可证编号:JY11131010332635</p>
+		<p class="copy">公司地址:北京市经济技术开发区同济南路19号 服务热线：400-707-0707</p>
+		<p class="copy"><img src="../images/bei.png" alt="">京公网安备 11030102000055号</p>
+	</div>
+</div>
+
+<!--右边侧栏-->
+<div class="outer_line"></div>
+<div class="right_scroll">
+	<ul class="bar_top">
+		<li class="bar1">
+			<div class="bar1_hide">
+				<span class="bar1_close"></span>
+				<div class="bar1_info">
+					<a class="bar1_pic" href="##"><img src="../images/user.jpg" alt=""></a>
+					<p class="bar1_tip">您好！请 <a href="load.html"> 登录</a>|<a href="register.html">注册</a></p>
+					<p class="bar1_tickt">
+						<a>我的订单</a>
+						<a>优惠券</a>
+					</p>
+				</div>
+			</div>
+		</li>
+		<li class="bar2">
+			<p><a href="shopcar.html">购物车</a></p>
+		</li>
+		<li class="bar3">
+			<p><a href="##">我的关注</a></p>
+		</li>
+		<li class="bar4">
+			<p><a href="##">在线客服</a></p>
+		</li>
+	</ul>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".bar1_close").click(function(){
+				$(".bar1_hide").hide();
+			});
+			$(".bar1").hover(function(){
+				$(".bar1_hide").show();
+			},function(){
+				$(".bar1_hide").hide();
+			});
+		});
+	</script>
+
+	<ul class="bar_fot">
+		<li class="bar5">
+			<p><a href="#"><img src="../images/code.jpg" alt=""></a></p>
+		</li>
+		<li class="bar6">
+			<p><a href="##">调查问卷</a></p>
+		</li>
+		<li class="bar7"><a href="#"></a>
+			<p><a href="#">回到顶部</a></p>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		$(function(){
+			$(".bar_fot li").hover(function(){
+				$(this).children("p").show().end()
+					   .siblings().children("p").hide();
+			}, function(){
+				$(this).children("p").hide();
+			});;
+		});
+	</script>
+</div>
+
+
+</body>
+</html>
